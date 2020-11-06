@@ -12,12 +12,12 @@ const App = () => {
 
   useEffect(() => {
     if (!planetsData)
-      fetchingData("https://swapi.dev/api/planets/")
+      fetchingData("http://swapi.dev/api/planets/")
         .then((data) =>
           setPlanetsData(data.results)
       );
   });
-  
+
   return (
   <BrowserRouter>
     <Switch>
