@@ -1,4 +1,6 @@
-# Available Scripts
+To view build project open link: [Star Wars Planets](https://zen-saha-6fb361.netlify.app).
+
+## Available Scripts
 
 In the project directory, you can run:
 
