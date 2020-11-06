@@ -1,0 +1,21 @@
+.residents { 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.resident {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+  background-color: rgba(57, 67, 85, 0.705);
+  border-radius: 5px;
+  &>span {
+    margin: .3% 0;
+  }
+}

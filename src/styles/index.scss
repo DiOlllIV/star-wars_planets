@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+    background: url('https://storge.pic2.me/c/1360x800/493/5276d087ccd7e.jpg');
+    background-size: 100% 100%;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: white;
+    }
+}

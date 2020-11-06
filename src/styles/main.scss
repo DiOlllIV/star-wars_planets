@@ -1,0 +1,28 @@
+
+.planets-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  height: 100vh;
+
+  &__item {
+      flex-grow: 1;
+      min-width: 200px;
+      border: 1px solid black;
+      background-color: rgba(68, 57, 85, 0.705);
+      margin: 0.5%;
+      cursor: pointer;
+      &:hover {
+          border: 1px solid white;
+          border-radius: 5px;
+      }
+  }
+}
+
+.planets-item {
+  display: block;
+  width: 100%;
+  padding: 5%;
+  border-top: 0.5px solid black;
+  text-align: center;
+}
