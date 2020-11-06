@@ -4,12 +4,14 @@ import Resident from "./Resident";
 import "../styles/residents.scss";
 
 const Residents = ({ residents }) => {
+  const http = /http/gi;
   const [residentsData, setResidentsData] = useState([]);
+  const fixedLinks = residents.map(resident => resident.replace(http, 'https'))
 
   //save to state for render information about any resident on actual planet. Return from function after fetching if response === 0 
   useEffect(() => {
     if (residentsData.length === 0)
-      fetchResidentsData(residents).then((data) => {
+      fetchResidentsData(fixedLinks).then((data) => {
         if (data.length === 0) return;
 
         setResidentsData(data);

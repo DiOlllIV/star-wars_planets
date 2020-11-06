@@ -8,11 +8,11 @@ const App = () => {
   //set feetching data of all planets after first render and transfer to Main component
   const [planetsData, setPlanetsData] = useState(false);
   //save all urls with info of actual planet and transfer to Details components for fetching 
-  const [planetUrl, setPlanetUrl] = useState('');
+  const [planetUrl, setPlanetUrl] = useState([]);
 
   useEffect(() => {
     if (!planetsData)
-      fetchingData("http://swapi.dev/api/planets/")
+      fetchingData("https://swapi.dev/api/planets/")
         .then((data) =>
           setPlanetsData(data.results)
       );
